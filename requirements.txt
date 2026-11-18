@@ -1,0 +1,12 @@
+# Versions minimales indicatives. Testé avec Python 3.13.
+pandas>=2.0
+numpy>=1.24
+matplotlib>=3.7
+seaborn>=0.12
+# yellowbrick 1.5 échoue avec scikit-learn 1.9.1 (YellowbrickTypeError) :
+# scikit-learn est donc limité aux versions antérieures à 1.8.
+scikit-learn>=1.3,<1.8
+yellowbrick>=1.5
+# yellowbrick 1.5 importe distutils, retiré de Python à partir de la 3.12 : setuptools le fournit.
+setuptools
+notebook>=7.0
